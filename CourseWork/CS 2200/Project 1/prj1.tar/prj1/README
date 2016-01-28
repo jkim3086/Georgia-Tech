@@ -1,0 +1,29 @@
+In this section of the project, you will need to compute the "control bit
+strings" for your microcontroller. Control bit strings will be used to decidew
+which signal is high (1) for a certain state. For example, let us look as
+FETCH macro state.
+
+In FETCH you get the next instruction from memory, and put it in the IR. At the
+same time, you also increment the PC. For LC 2200, this takes 3 clock cycles:
+Let us look at which signals need to be high for FETCH0:
+DrPC -> To drive the value of PC on to the bus
+LdMar -> To load the PC value in the memory access register
+LdA -> Time saving trip to load current PC into one of the ALU registers.
+NEXT STATE -> FETCH1
+
+This means that all the signals except for the above mentioned need to be low (0)
+
+Following the schema from Appendix A of the project pdf file we come up with the
+following bit string: Why?
+
+0000010001010010000000000
+
+which translates to the following hex value:
+
+008A400
+
+Now, your task is to compute the bit string for all MACRO states of each instruction
+in the ISA, and convert them to hex.
+For this purpose you should make a spread sheet with all the macro states, and
+all the control signals. Then you should fill out the 1's and 0's for all the
+control signals under a certain macro state.

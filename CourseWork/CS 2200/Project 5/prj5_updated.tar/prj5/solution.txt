@@ -1,0 +1,314 @@
+Default Configuration
+
+--astar.trace--
+Cache Settings
+C: 15
+B: 5
+S: 3
+
+Cache Statistics
+Accesses: 501468
+Reads: 289766
+Read misses: 11145
+Writes: 211702
+Write misses: 38821
+Misses: 49966
+Writebacks: 38344
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.099639
+Average access time (AAT): 11.963946
+
+--bzip2.trace--
+Cache Settings
+C: 15
+B: 5
+S: 3
+
+Cache Statistics
+Accesses: 544514
+Reads: 369344
+Read misses: 851
+Writes: 175170
+Write misses: 817
+Misses: 1668
+Writebacks: 298
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.003063
+Average access time (AAT): 2.306328
+
+--mcf.trace--
+Cache Settings
+C: 15
+B: 5
+S: 3
+
+Cache Statistics
+Accesses: 507700
+Reads: 280182
+Read misses: 1542
+Writes: 227518
+Write misses: 7721
+Misses: 9263
+Writebacks: 8044
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.018245
+Average access time (AAT): 3.824503
+
+--perlbench.trace--
+Cache Settings
+C: 15
+B: 5
+S: 3
+
+Cache Statistics
+Accesses: 507441
+Reads: 302052
+Read misses: 14024
+Writes: 205389
+Write misses: 7979
+Misses: 22003
+Writebacks: 10213
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.043361
+Average access time (AAT): 6.336071
+
+Direct Mapped Cache
+C = 10, S = 0
+
+--astar.trace--
+Cache Settings
+C: 10
+B: 5
+S: 0
+
+Cache Statistics
+Accesses: 501468
+Reads: 289766
+Read misses: 53866
+Writes: 211702
+Write misses: 52609
+Misses: 106475
+Writebacks: 56933
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.212327
+Average access time (AAT): 23.232661
+
+--bzip2.trace--
+Cache Settings
+C: 10
+B: 5
+S: 0
+
+Cache Statistics
+Accesses: 544514
+Reads: 369344
+Read misses: 26540
+Writes: 175170
+Write misses: 13564
+Misses: 40104
+Writebacks: 21729
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.073651
+Average access time (AAT): 9.365100
+
+--mcf.trace--
+Cache Settings
+C: 10
+B: 5
+S: 0
+
+Cache Statistics
+Accesses: 507700
+Reads: 280182
+Read misses: 51698
+Writes: 227518
+Write misses: 41938
+Misses: 93636
+Writebacks: 55069
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.184432
+Average access time (AAT): 20.443175
+
+--perlbench.trace--
+Cache Settings
+C: 10
+B: 5
+S: 0
+
+Cache Statistics
+Accesses: 507441
+Reads: 302052
+Read misses: 96592
+Writes: 205389
+Write misses: 41154
+Misses: 137746
+Writebacks: 64379
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.271452
+Average access time (AAT): 29.145225
+
+4 Way Associative
+C = 12, S = 2, B = 4
+
+--astar.trace--
+Cache Settings
+C: 12
+B: 4
+S: 2
+
+Cache Statistics
+Accesses: 501468
+Reads: 289766
+Read misses: 21398
+Writes: 211702
+Write misses: 77117
+Misses: 98515
+Writebacks: 77656
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.196453
+Average access time (AAT): 21.645321
+
+--bzip2.trace--
+Cache Settings
+C: 12
+B: 4
+S: 2
+
+Cache Statistics
+Accesses: 544514
+Reads: 369344
+Read misses: 3441
+Writes: 175170
+Write misses: 3058
+Misses: 6499
+Writebacks: 3012
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.011935
+Average access time (AAT): 3.193541
+
+--mcf.trace--
+Cache Settings
+C: 12
+B: 4
+S: 2
+
+Cache Statistics
+Accesses: 507700
+Reads: 280182
+Read misses: 3218
+Writes: 227518
+Write misses: 14010
+Misses: 17228
+Writebacks: 16403
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.033933
+Average access time (AAT): 5.393343
+
+--perlbench.trace--
+Cache Settings
+C: 12
+B: 4
+S: 2
+
+Cache Statistics
+Accesses: 507441
+Reads: 302052
+Read misses: 39150
+Writes: 205389
+Write misses: 23411
+Misses: 62561
+Writebacks: 32435
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.123287
+Average access time (AAT): 14.328724
+
+Fully Associative
+C = 12, S = 8, B = 4
+
+--astar.trace--
+Cache Settings
+C: 12
+B: 4
+S: 8
+
+Cache Statistics
+Accesses: 501468
+Reads: 289766
+Read misses: 20771
+Writes: 211702
+Write misses: 77068
+Misses: 97839
+Writebacks: 77470
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.195105
+Average access time (AAT): 21.510517
+
+--bzip2.trace--
+Cache Settings
+C: 12
+B: 4
+S: 8
+
+Cache Statistics
+Accesses: 544514
+Reads: 369344
+Read misses: 3441
+Writes: 175170
+Write misses: 3058
+Misses: 6499
+Writebacks: 3022
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.011935
+Average access time (AAT): 3.193541
+
+--mcf.trace--
+Cache Settings
+C: 12
+B: 4
+S: 8
+
+Cache Statistics
+Accesses: 507700
+Reads: 280182
+Read misses: 3046
+Writes: 227518
+Write misses: 13724
+Misses: 16770
+Writebacks: 16091
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.033031
+Average access time (AAT): 5.303132
+
+--perlbench.trace--
+Cache Settings
+C: 12
+B: 4
+S: 8
+
+Cache Statistics
+Accesses: 507441
+Reads: 302052
+Read misses: 36895
+Writes: 205389
+Write misses: 22992
+Misses: 59887
+Writebacks: 31198
+Access Time: 2
+Miss Penalty: 100
+Miss rate: 0.118018
+Average access time (AAT): 13.801766

@@ -1,0 +1,123 @@
+CS 2200 Fall 2015
+Project 6
+Name: Jeongsoo Kim
+GT Number: 903093339
+
+Problem 1B
+----------
+Run your OS simulation with 1, 2, and 4 CPUs. Compare the total execution time of each. Is there a linear
+relationship between the number of CPUs and total execution time?
+CPU = 1
+# of Context Switches: 99
+Total execution time: 67.7 s
+Total time spent in READY state: 390.7 s
+
+CPU = 2
+# of Context Switches: 105
+Total execution time: 36.3 s
+Total time spent in READY state: 84.6 s
+
+CPU = 4
+# of Context Switches: 181
+Total execution time: 33.2 s
+Total time spent in READY state: 1.1 s
+
+According to outputs of the simulation, the relationship between the number of cpus and total execution time
+is inversely propotional. The reason is why this is happend is that multiple CPUs in a multithreaded program can
+ independently perform thier own tasks or executions. Since the simulator, provided, is the multi threaded OS simulator,
+if we give multiple CPUs, those will perform multiple executions at same time.(Parallel execution) Therefore, the execution
+ time is decreased as the number of CPU is increased.
+
+/* Fix me */
+
+Problem 2B
+----------
+Run your Round-Robin scheduler with time slices of 800ms, 600ms, 400ms, and 200ms. Use only one CPU
+for your tests. Compare the statistics at the end of the simulation. You will see that the total waiting time
+decreases with shorter time slices. However, in a real OS, the shortest time slice may not be the best choice.
+Explain why that is the case?
+
+800ms
+# of Context Switches: 136
+Total execution time: 67.6 s
+Total time spent in READY state: 325.4 s
+
+
+600ms
+# of Context Switches: 161
+Total execution time: 67.6 s
+Total time spent in READY state: 314.5 s
+
+400ms
+# of Context Switches: 203
+Total execution time: 67.6 s
+Total time spent in READY state: 298.8 s
+
+
+200ms
+# of Context Switches: 362
+Total execution time: 67.5 s
+Total time spent in READY state: 285.2 s
+
+According to the outputs of the simulation above, we can see that the total time spent in READY state is decreased
+as the time slice is decreased. However, we can also see that the numbers of context switches is increased
+as the time slice is decreased. In Round Robin scheduling, CPUs are preempted and assigned to other processes,
+when CPU time(time slice) of each CPU is expired.(Even though task is not completed yet). Therefore, if time slice
+ is short, switching process(assigning CPUs) of CPUs will be occured more frequently. In other word, processes with a short time slices
+will have short time to take rests in ready state. This is why the total time spent in READY state is decrease as the time slice is decreased
+In addition, it also explains the inverse relationship between number of context switches and total time spent in READY state. (Short time slice -> more switching)
+As I mentioned previously, Round Robin scheduling may require a lot of switching, it the given time slice is pretty short. To perform the switching, CPU needs to swap pages
+. Therefore, if a lot of switchings are occured, time for CPU to swap pages will also be increased. This can cause spending time on CPU inefficiently that spending more time than
+performing or processing actual productive work. In other word, it can cause Thrashing, we learned in the class previously.
+Therefore, in a real OS, the shortest time slice(Cauing maximum number of switching in Round robin scheduling) is not the best choice.
+
+
+
+/* Fix me */
+
+Problem 3B
+----------
+Run each of your three scheduling algorithms (using one CPU), and compare the total waiting times. Which
+algorithm is the closest approximation of SJF? Why?
+
+FIFO
+CPU = 1
+# of Context Switches: 99
+Total execution time: 67.7 s
+Total time spent in READY state: 390.7 s
+
+Round Robin
+800ms
+# of Context Switches: 136
+Total execution time: 67.6 s
+Total time spent in READY state: 325.4 s
+
+
+600ms
+# of Context Switches: 161
+Total execution time: 67.6 s
+Total time spent in READY state: 314.5 s
+
+400ms
+# of Context Switches: 203
+Total execution time: 67.6 s
+Total time spent in READY state: 298.8 s
+
+
+200ms
+# of Context Switches: 362
+Total execution time: 67.5 s
+Total time spent in READY state: 285.2 s
+
+Static priority
+# of Context Switches: 147
+Total execution time: 67.8 s
+Total time spent in READY state: 303.8 s
+
+By comparing the total waiting time in READY state of the three schedulers, Round Robin algorithm is the closest approximation of SJF.
+Because Round Robin scheduler with a time slice 2 give the shortest total time spent in READY state. As I explained about Round Robin in Q2, CPUs will spend time 
+on processes equally. Since each job is processed in a same duration, shorest amount job will be done first in Round Robin scheduling, and then next shortest job will
+be completed after the most shortest job is done. This routine will be cycled or repeated during Round Robin scheduling. This is basically what SJF algorithm does. 
+Therefore, Round Robin algorithm is the closest approximation of SJF among the given three algorithms. In my opinion, this is completely making a sense. Because FIFO performs
+job, come first. Therefore, if the first job is a longest job, this is completely opposite to SJF. (Also can cause Convoy effect). In Static Priority algorithm, we actually do not know
+how priorities will be assigned to the jobs. In other word, a shortest can have a lowest priority. 

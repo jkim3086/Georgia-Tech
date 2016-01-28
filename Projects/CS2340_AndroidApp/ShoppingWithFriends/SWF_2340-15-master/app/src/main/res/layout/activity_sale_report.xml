@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gatech.cs2340.willcode4money.shoppingwithfriends.SaleRequest"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemReport"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/prompt_item"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceReport"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/prompt_price"
+        android:inputType="number" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationReport"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/prompt_location"
+        android:inputType="text" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/cancelBtn"
+            android:layout_gravity="end|top"
+            android:textStyle="bold"
+            android:onClick="cancel" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_sale_report"
+            android:id="@+id/reportBtn"
+            android:layout_gravity="start|top"
+            android:textStyle="bold"
+            android:onClick="makeReport" />
+    </FrameLayout>
+
+</LinearLayout>

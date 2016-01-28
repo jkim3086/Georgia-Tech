@@ -1,0 +1,4 @@
+<!--suppress XmlUnboundNsPrefix -->
+<resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyBMuUB7jv8gR8x1JAyN9Bm6zfUc37AaeLY</string>
+</resources>

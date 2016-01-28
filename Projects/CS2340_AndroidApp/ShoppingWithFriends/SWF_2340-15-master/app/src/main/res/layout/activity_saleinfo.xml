@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/friends_list_title"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/Name"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginTop="79dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/friends_list_title"
+        android:layout_alignLeft="@+id/friend_Item"
+        android:layout_alignStart="@+id/friend_Item"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/friend_Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Item"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:layout_below="@+id/friend_name"
+        android:layout_alignRight="@+id/friend_Item"
+        android:layout_alignEnd="@+id/friend_Item" />
+
+    <TextView
+        android:id="@+id/friend_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Price"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:layout_below="@+id/friend_Item"
+        android:layout_alignLeft="@+id/friend_Item"
+        android:layout_alignStart="@+id/friend_Item" />
+
+    <TextView
+        android:id="@+id/friend_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Location"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:layout_below="@+id/friend_Price"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GoogleMap"
+        android:id="@+id/GoogleMap"
+        android:layout_below="@+id/friend_Location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="66dp" />
+
+
+</RelativeLayout>

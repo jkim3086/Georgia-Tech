@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shopping With Friends</string>
+    <string name="app_name_excite">Shopping With Friends!</string>
+    <string name="team">Team 39: Will Code For Money</string>
+    <string name="title_activity_main">Home</string>
+    <string name="register">Register</string>
+    <string name="title_activity_add_friend">Add Friend</string>
+    <string name="title_activity_view_friends">View Friends</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_email">Email Address</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_sign_in_short">Sign In</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="title_activity_login">Log In</string>
+    <string name="cancel">Cancel</string>
+    <string name="prompt_password_confirm">Confirm Password</string>
+    <string name="title_activity_sale_request">Add Request</string>
+    <string name="title_activity_sale_report">Add Report</string>
+    <string name="prompt_item">Item</string>
+    <string name="prompt_price">Price</string>
+    <string name="title_activity_view_items">View Items</string>
+    <string name="send_recovery_email">Send Email</string>
+    <string name="forgot_pass">Forgot password?</string>
+    <string name="prompt_location">Location</string>
+    <string name="title_activity_view_reports">View Reports</string>
+    <string name="title_activity_recover_password">Recover Password</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Name">Name</string>
+    <string name="Hybrid">Hybrid</string>
+    <string name="Email">E-mail</string>
+    <string name="Item">Item</string>
+    <string name="Satellite">Satellite</string>
+    <string name="Rating">Rating</string>
+    <string name="Price">Price</string>
+    <string name="Terrain">Terrain</string>
+    <string name="sales">#sales</string>
+    <string name="Location">Location</string>
+    <string name="None">None</string>
+    <string name="Name2">Name</string>
+    <string name="GoogleMap">View the location on Google map</string>
+    <string name="title_activity_item_list">Item List</string>
+    <string name="title_activity_change_pass">Change Password</string>
+    <string name="title_activity_report_list">Report List</string>
+    <string name="new_password">Enter your new password</string>
+
+</resources>

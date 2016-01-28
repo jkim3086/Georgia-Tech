@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gatech.cs2340.willcode4money.shoppingwithfriends.AddFriend">
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/programHeader"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="#000000" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/prompt_name"
+        android:ems="10"
+        android:id="@+id/addFriend_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/addFriend_email"
+        android:hint="@string/prompt_email" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_add_friend"
+        android:id="@+id/button4"
+        android:onClick="addFriend"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

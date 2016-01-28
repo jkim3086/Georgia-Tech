@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    tools:context="edu.gatech.cs2340.willcode4money.shoppingwithfriends.MainScreen">
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/programHeader"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_view_friends"
+        android:onClick="viewFriends"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_add_friend"
+        android:onClick="addFriends"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_view_items"
+        android:id="@+id/button6"
+        android:layout_gravity="center_horizontal"
+        android:onClick="viewRequests" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_sale_request"
+        android:id="@+id/button5"
+        android:layout_gravity="center_horizontal"
+        android:onClick="makeRequests" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_view_reports"
+        android:id="@+id/button8"
+        android:layout_gravity="center_horizontal"
+        android:onClick="viewReports" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_sale_report"
+        android:id="@+id/button7"
+        android:layout_gravity="center_horizontal"
+        android:onClick="makeReport" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_change_pass"
+        android:id="@+id/button10"
+        android:layout_gravity="center_horizontal"
+        android:onClick="changePass"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_sign_out"
+        android:onClick="logout"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
